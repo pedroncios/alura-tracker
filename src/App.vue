@@ -1,10 +1,11 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import BarraLateral from './components/BarraLateral.vue'
+import { defineComponent } from 'vue';
+import BarraLateral from './components/BarraLateral.vue';
+import TarefaForm from './components/TarefaForm.vue';
 
 export default defineComponent({
   name: 'App',
-  components: { BarraLateral }
+  components: { BarraLateral, TarefaForm }
 })
 </script>
 
@@ -13,7 +14,9 @@ export default defineComponent({
     <div class="column is-one-quarter">
       <BarraLateral />
     </div>
-    <div class="column is-three-quarter"></div>
+    <div class="column is-three-quarter">
+      <TarefaForm />
+    </div>
   </main>
 </template>
 
